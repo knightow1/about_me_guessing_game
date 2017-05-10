@@ -1,7 +1,7 @@
 'use strict';
 
 alert('Let\'s play a guessing game to see how well you know Nick.');
-alert('All questions require yes/no or y/n answers.');
+alert('The first group of questions require yes/no or y/n answers. Let\'s begin.');
 
 var counter = 0;
 
@@ -90,7 +90,7 @@ while (true) {
   }
 }
 
-alert('The last two questions are not yes/no and you can get multiple guesses.');
+alert('The last two questions are a bit different. Now you can answer with other options other than yes/no.');
 var number;
 
 while (number !== 5) {
@@ -100,20 +100,47 @@ while (number !== 5) {
 
   if (number < 5) {
     alert('Too low. Guess again.');
+    break;
   } else if (number > 5){
     alert('Too high. Guess again.');
+    break;
   } else if (isNaN(number) || number === null) {
     alert('Please enter a number.');
+    break;
   } else {
     alert('Great Job!');
     counter++;
   }
 }
 
-alert('This last question has multiple right answers. Final question: Can you guess one of Nick\'s favorite animals?');
+alert('This last question has multiple right answers. Final question: Can you guess one of Nick\'s favorite animals? (hint: correct answers are plural.)' );
 
 var animal = ['dogs', 'owls', 'bears'];
-var answer = prompt('Your choices are cats, dogs, turtles, squids, bears, tigers, monekeys, eagles and owls').toLowerCase();
+var answer = prompt('Your animal choices are between cats, dogs, turtles, squids, bears, tigers, monekeys, eagles and owls.').toLowerCase();
 var flag;
 
-for (answer)
+for (var i = 0; i < animal.length; i++) {
+  console.log('current animal:', animal[i]);
+  console.log('user animal:', answer);
+
+  if (answer === animal[i]) {
+    alert('Awesome! You must at least know something about Nick.');
+    counter++;
+    flag = true;
+    break;
+  }
+  if (!flag) {
+    alert('Wrong answer. Bummer.');
+    break;
+  }
+}
+
+alert('Let\'s see you how you did. You answered ' + counter + ' out of 7 questions correctly.');
+
+if (counter === 7) {
+  alert('No way you got all those right. You must be his best friend. Great Job!');
+} else if (counter < 4) {
+  alert ('You don\'t know Nick very well do you? Nice try anyway.');
+} else {
+  alert('Looks like you know Nick pretty well but you could be trying harder.');
+}
