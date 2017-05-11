@@ -1,23 +1,25 @@
 * {
   color: #fff;
   font-family: sans-serif;
-  text-align: center;
   style: none;
 }
 
 header {
-  margin-left, margin-right: 200px;
+  margin-right: 40%;
   padding: 20px;
   background: linear-gradient(to bottom left, #fff, #26FFFA);
-  border: 2px, #7F001D;
+  border: 10px, #7F001D;
   border-radius: 15px;
+  border-style: double;
   margin-top: 5px;
   font-family: helvetica;
+  text-align: center;
 }
 
 header p {
   color: #297F13;
   font-style: normal;
+  text-align: center;
 }
 
 body {
@@ -38,6 +40,8 @@ li {
 
 img {
   margin-top: 15px;
-  border: 1px;
+  border: 10px;
+  border-style: double;
   border-radius: 20px;
+  text-align: center;
 }
