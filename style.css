@@ -1,47 +1,51 @@
 * {
-  color: #fff;
-  font-family: sans-serif;
-  style: none;
+  outline: dotted 2px orange;
 }
 
-header {
-  margin-right: 40%;
-  padding: 20px;
-  background: linear-gradient(to bottom left, #fff, #26FFFA);
-  border: 10px, #7F001D;
-  border-radius: 15px;
-  border-style: double;
-  margin-top: 5px;
-  font-family: helvetica;
-  text-align: center;
-}
-
-header p {
-  color: #297F13;
-  font-style: normal;
-  text-align: center;
+.clearfix {
+  clear: both;
 }
 
 body {
-  background-image: url("https://c1.staticflickr.com/5/4087/4831156195_a338bd1785_b.jpg");
+  height:auto;
+  width: 1240px;
 }
 
-h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #297F13;
-  font-weight: bold;
+header {
+  height:40px;
+  background: #444;
+  position: fixed;
 }
 
-li {
-  margin-bottom: 20px;
-  font-size: 18px;
+header div {
+  width: 1240px;
+  margin: 0px auto;
 }
 
-img {
-  margin-top: 15px;
-  border: 10px;
-  border-style: double;
-  border-radius: 20px;
-  text-align: center;
+header div h1 {
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin: 5px 0px 0px 20px;
+}
+
+header div li {
+  display: inline-block;
+  right: 20px;
+  margin: 10px 20px 0px 20px;
+  float: right;
+}
+
+main {
+ width:1240px;
+ margin: 10px auto;
+}
+
+.placehold {
+  height: 40px;
+  width:1240px;
+  margin: 0px auto;
+}
+.hero {
+  float:left;
 }
