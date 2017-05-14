@@ -1,16 +1,18 @@
 * {
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 
 .clearfix {
   clear: both;
 }
 
-.background {
-  height: 100%;
+body {
+  height: 1080px;
+  position: relative;
   width: 100%;
-  background: url("http://www.gotechnologix.com/wp-content/uploads/2016/05/dark-background-wallpaper.jpg")no-repeat relative;
+  background: url("http://wallpaper-gallery.net/images/full-hd-dark-wallpapers/full-hd-dark-wallpapers-26.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
@@ -19,6 +21,8 @@ header {
   background: #777;
   position: fixed;
   box-shadow: 3px 3px 1px #888;
+  top: 0;
+  left: 0;
 }
 
 header div {
@@ -27,10 +31,11 @@ header div {
 }
 
 header div h1 {
-  color: white;
-  font-size: 30px;
   float: left;
   margin: 5px 0px 0px 20px;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
 }
 
 header div li {
@@ -46,6 +51,7 @@ main {
 }
 
 .me {
+  width: 620px;
   margin-top: 40px;
   float:left;
 }
@@ -57,6 +63,11 @@ h2 {
   color: white;
   text-align: center;
   font-size: 25px;
+}
+
+.me h2 {
+  width: 100%;
+  float:left;
 }
 
 .experience h2 {
@@ -101,4 +112,14 @@ p {
   color: white;
   text-align: center;
   line-height: 30px;
+}
+
+ footer {
+  height: 20px;
+  width: 100%;
+  margin: 0px, auto;
+  position: fixed;
+  background: #777;
+  bottom: 0;
+  left: 0;
 }
