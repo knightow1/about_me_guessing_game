@@ -1,11 +1,11 @@
 'use strict';
 
-alert('Let\'s play a guessing game to see how well you know Nick.');
-alert('The first group of questions require yes/no or y/n answers. Let\'s begin.');
-
 var counter = 0;
 
 function questionMusic(){
+
+  alert('Let\'s play a guessing game to see how well you know Nick.');
+  alert('The first group of questions require yes/no or y/n answers. Let\'s begin.');
 
   while (true) {
 
