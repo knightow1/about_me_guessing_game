@@ -1,47 +1,125 @@
 * {
-  color: #fff;
   font-family: sans-serif;
-  style: none;
 }
 
-header {
-  margin-right: 40%;
-  padding: 20px;
-  background: linear-gradient(to bottom left, #fff, #26FFFA);
-  border: 10px, #7F001D;
-  border-radius: 15px;
-  border-style: double;
-  margin-top: 5px;
-  font-family: helvetica;
-  text-align: center;
-}
-
-header p {
-  color: #297F13;
-  font-style: normal;
-  text-align: center;
+.clearfix {
+  clear: both;
 }
 
 body {
-  background-image: url("https://c1.staticflickr.com/5/4087/4831156195_a338bd1785_b.jpg");
+  height: 1080px;
+  position: relative;
+  width: 100%;
+  background: url("http://wallpaper-gallery.net/images/full-hd-dark-wallpapers/full-hd-dark-wallpapers-26.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #297F13;
-  font-weight: bold;
+header {
+  width: 100%;
+  height:40px;
+  background: #777;
+  position: fixed;
+  box-shadow: 3px 3px 1px #888;
+  top: 0;
+  left: 0;
 }
 
-li {
-  margin-bottom: 20px;
-  font-size: 18px;
+header div {
+  width: 100%;
+  margin: 0px auto;
 }
 
-img {
-  margin-top: 15px;
-  border: 10px;
-  border-style: double;
-  border-radius: 20px;
+header div h1 {
+  float: left;
+  margin: 5px 0px 0px 20px;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+header div li {
+  display: inline-block;
+  right: 20px;
+  margin: 10px 20px 0px 20px;
+  float: right;
+}
+
+main {
+ width: 1240px;
+ margin: 10px auto;
+}
+
+.me {
+  width: 620px;
+  margin-top: 40px;
+  float:left;
+}
+
+h2 {
+  height: 40px;
+  float: left;
+  background: #444;
+  color: white;
   text-align: center;
+  font-size: 25px;
+}
+
+.me h2 {
+  width: 100%;
+  float:left;
+}
+
+.experience h2 {
+  width: 620px;
+  margin-top: 40px;
+}
+
+ul {
+  font-size: 0px;
+}
+
+.experience li {
+  float: left;
+}
+
+.likes {
+  width: 930px;
+}
+
+.likes h2 {
+  width: 100%;
+}
+
+.likes li {
+  float:left;
+}
+
+.about_me  {
+  height: 460px;
+  width: 310px;
+  margin-top: -250px;
+  float: right;
+  background: #AAA;
+}
+
+.about_me h2 {
+  width: 100%;
+}
+
+p {
+  width: 300px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+ footer {
+  height: 20px;
+  width: 100%;
+  margin: 0px, auto;
+  position: fixed;
+  background: #777;
+  bottom: 0;
+  left: 0;
 }

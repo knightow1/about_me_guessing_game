@@ -1,3 +1,5 @@
+/*
+
 'use strict';
 
 alert('Let\'s play a guessing game to see how well you know Nick.');
